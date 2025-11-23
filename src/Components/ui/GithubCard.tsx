@@ -6,6 +6,7 @@ import {
   CardHeader,
 } from "@/Components/magicui/card";
 import { BorderBeam } from "../magicui/border-beam";
+import { Tooltip } from '../aceternity/tooltip-card';
 
 export function GithubCard() {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -32,10 +33,14 @@ export function GithubCard() {
             <div className="md:px-0">
                 <p className="font-bold text-black  dark:text-white text-[15px] md:text-xl heading-font selection:bg-neutral-600">
                 GitHub Contributions •{" "}
+                <Tooltip 
+                containerClassName="text-neutral-600 dark:text-neutral-400"
+          content="AWS markets itself as the “world's most comprehensive and broadly adopted cloud platform” offering over 200 fully featured services globally.">
                 <span className="underline md:decoration-white md:dark:decoration-neutral-950 md:hover:decoration-green-500 decoration-green-500 cursor-pointer">
                     <a href="https://github.com/prodot-com/"
                     target="blank">@prodot-com</a>
                 </span>
+                </Tooltip>
                 </p>
             </div>
         </CardHeader>
