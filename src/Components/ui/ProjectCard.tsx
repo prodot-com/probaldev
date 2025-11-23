@@ -136,5 +136,3 @@ export function Projectcard() {
     </div>
   );
 }
-
-
