@@ -35,8 +35,10 @@ export function GithubCard() {
                 GitHub Contributions •{" "}
                 <Tooltip 
                 containerClassName="text-neutral-600 dark:text-neutral-400"
-          content="AWS markets itself as the “world's most comprehensive and broadly adopted cloud platform” offering over 200 fully featured services globally.">
-                <span className="underline md:decoration-white md:dark:decoration-neutral-950 md:hover:decoration-green-500 decoration-green-500 cursor-pointer">
+          content="let's follow in Github">
+                <span className="underline md:decoration-white md:dark:decoration-neutral-950 md:hover:decoration-green-500 decoration-green-500 cursor-pointer
+                text-black dark:text-white
+                ">
                     <a href="https://github.com/prodot-com/"
                     target="blank">@prodot-com</a>
                 </span>
