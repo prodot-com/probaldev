@@ -34,7 +34,7 @@ const TopArrow = () => {
         {showComponent &&
         (<div className='z-20 fixed bottom-23 right-8 border border-black p-1.5 rounded-full
             dark:bg-neutral-700/50 dark:border-neutral-300
-            bg-white/40 cursor-pointer hover:scale-105 transition-all delay-75
+            bg-white/40 cursor-pointer hover:bottom-31 hover:scale-105 transition-all delay-100
             shadow-neutral-900 dark:shadow-none shadow-md backdrop-blur-[7px]
             sm:right-70 sm:bottom-30
             '
