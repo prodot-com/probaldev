@@ -114,7 +114,7 @@ const Home = () => {
           <GithubCard/>
 
           <div className="selection:bg-neutral-700 px-0 md:px-2 mt-9 font-bold w-full max-w-5xl">
-            <p className="pl-4 md:pl-8 instrument-serif-bold text-[15px] md:text-[27px]">Featured Projects</p>
+            <p className="pl-4 md:pl-8 instrument-serif-bold text-[27px] md:text-[27px]">Featured Projects</p>
                   <Projectcard />
           </div>
 
@@ -132,8 +132,8 @@ const Home = () => {
 
           <div className="selection:bg-neutral-700 mt-7 pt-5 pl-4 md:px-9 border-t-1 dark:border-neutral-700 flex flex-col gap-3 w-full max-w-5xl min-h-[170px]">
             <p className="pl-2 flex items-center gap-1 hanken-grotesk-font">
-              <Copyright className="w-4 sm:w-5"/> 
-              <span className="instrument-serif-bold text-[15px] sm:text-[19px]">2025 Probal Ghosh. All rights reserved.</span>
+              <Copyright className="w-5 sm:w-5"/> 
+              <span className="instrument-serif-bold text-[19px] sm:text-[19px]">2025 Probal Ghosh. All rights reserved.</span>
             </p>
           </div>
 

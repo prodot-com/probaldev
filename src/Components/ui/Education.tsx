@@ -31,7 +31,7 @@ const educations: EducationItem[] = [
 export function EducationCard() {
   return (
     <section className="px-2 md:px-8 md:pl-0 md:pt-3 md:pb-4">
-      <p className="text-[15px] md:text-[27px] instrument-serif-bold mb-6 text-neutral-900 dark:text-white">
+      <p className="text-[27px] md:text-[27px] instrument-serif-bold mb-6 text-neutral-900 dark:text-white">
         Education
       </p>
 
@@ -55,14 +55,14 @@ export function EducationCard() {
                       href={edu.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="instrument-serif-bold text-[14px] md:text-[19px] text-neutral-800 dark:text-neutral-200"
+                      className="instrument-serif-bold text-[19px] md:text-[19px] text-neutral-800 dark:text-neutral-200"
                       >
                       {edu.name}
                     </a>
                     <ChevronRight className="w-4 text-neutral-800 dark:text-neutral-200 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-transform duration-200" />
                   </div>
 
-                  <p className="instrument-serif-italic-bold text-[15px] text-neutral-500 dark:text-neutral-400">
+                  <p className="instrument-serif-italic-bold text-[17px] md:text-[15px] text-neutral-500 dark:text-neutral-400">
                     {edu.subname}
                   </p>
                 </div>

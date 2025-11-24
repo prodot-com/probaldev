@@ -40,7 +40,7 @@ const TechIcon = ({
       <div className="flex flex-row items-center justify-center gap-3">
         <img className="" width="35" height="35" alt="" src={icon}/>
         <div className="flex flex-col">
-          <figcaption className="text-[15px] instrument-serif dark:text-white">
+          <figcaption className="text-[17px] md:text-[15px] instrument-serif dark:text-white">
             {name}
           </figcaption>
         </div>

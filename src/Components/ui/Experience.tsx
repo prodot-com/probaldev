@@ -33,7 +33,7 @@ export function Experience() {
 
   return (
     <section className="px-2 md:px-8 md:pl-0 md:pt-3 pb-6 md:pb-5">
-      <p className="text-[15px] md:text-[27px] font-bold instrument-serif-bold mb-6 text-neutral-900 dark:text-white">
+      <p className="text-[27px] md:text-[27px] font-bold instrument-serif-bold mb-6 text-neutral-900 dark:text-white">
         Work Experience
       </p>
 
@@ -43,7 +43,7 @@ export function Experience() {
             {/* Top Row */}
             <div
               onClick={() => toggleDescription(index)}
-              className="flex flex-row gap-7 sm:flex-row sm:items-center sm:justify-between sm:gap-3 cursor-pointer group"
+              className="flex flex-row gap-7 sm:flex-row justify-between sm:items-center sm:justify-between sm:gap-3 cursor-pointer group"
             >
               {/* Left: Icon + Company Info */}
               <div className="flex items-center gap-4">
@@ -54,7 +54,7 @@ export function Experience() {
                 />
                 <div>
                   <div className="inline-flex items-center gap-1">
-                    <p className="font-semibold instrument-serif-bold text-[14px] md:text-[19px] text-neutral-800 dark:text-neutral-200">
+                    <p className="font-semibold instrument-serif-bold text-[19px] md:text-[19px] text-neutral-800 dark:text-neutral-200">
                       {exp.company}
                     </p>
                     <ChevronRight
@@ -63,17 +63,17 @@ export function Experience() {
                       }`}
                     />
                   </div>
-                  <p className="instrument-serif-italic-bold text-[15px] text-neutral-500 dark:text-neutral-400">
+                  <p className="instrument-serif-italic-bold text-[17px] md:text-[15px] text-neutral-500 dark:text-neutral-400">
                     {exp.sub}
                   </p>
                 </div>
               </div>
 
               {/* Right: Start/End Date Stack */}
-              <div className="flex flex-col sm:flex-row  items-end text-right text-neutral-600 dark:text-neutral-400 text-sm">
-                <p className="text-[15px] instrument-serif-bold">{exp.startDate}</p>
+              <div className="flex flex-col sm:flex-row items-end text-right text-neutral-600 dark:text-neutral-400 text-sm">
+                <p className="text-[17px] md:text-[15px] instrument-serif-bold">{exp.startDate}</p>
                 <p className="px-1 md:inline hidden">-</p>
-                <p className="text-[15px] instrument-serif-bold">{exp.endDate || "Present"}</p>
+                <p className="text-[17px] md:text-[15px] instrument-serif-bold">{exp.endDate || "Present"}</p>
               </div>
             </div>
 
@@ -85,7 +85,7 @@ export function Experience() {
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="text-sm md:text-[16px] instrument-serif-italic text-neutral-700 dark:text-neutral-300 leading-relaxed pl-[3.5rem] sm:pl-[4.5rem] md:pr-4"
+                  className="text-[16px] md:text-[16px] instrument-serif-italic text-neutral-700 dark:text-neutral-300 leading-relaxed pl-[3.5rem] sm:pl-[4.5rem] md:pr-4"
                 >
                   {exp.description}
                 </motion.p>

@@ -66,11 +66,11 @@ export function Projectcard() {
 
           {/* Header */}
           <CardHeader className="px-3 md:pt-1">
-            <CardTitle className="instrument-serif-bold text-[20px]">
+            <CardTitle className="instrument-serif-bold text-[24px] md:text-[20px]">
               {project.name}
             </CardTitle>
 
-            <div className="instrument-serif text-[12px] prose prose-sm dark:prose-invert md:text-[14px] max-w-none">
+            <div className="instrument-serif text-[14px] prose prose-sm dark:prose-invert md:text-[14px] max-w-none">
               <ReactMarkdown>{project.description}</ReactMarkdown>
             </div>
           </CardHeader>
@@ -81,7 +81,7 @@ export function Projectcard() {
               {project.tools.map((tool) => (
                 <span
                   key={tool}
-                  className="text-[12px] font-normal bg-neutral-200 dark:bg-neutral-800 text-gray-800 dark:text-white px-2 py-1 rounded-[4px] border
+                  className="text-[13px] md:text-[12px] font-normal bg-neutral-200 dark:bg-neutral-800 text-gray-800 dark:text-white px-2 py-1 rounded-[4px] border
                   instrument-serif
                   "
                 >

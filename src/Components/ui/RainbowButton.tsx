@@ -16,9 +16,10 @@ export function RainbowButtonCustom() {
     <RainbowButton
       onClick={() => handleClick()}
       className="flex items-center gap-2"
+      size="lg"
     >
-      <Mail className="w-4 h-4" />
-      <span className="instrument-serif tracking-widest text-[15px]">Mail</span>
+      <Mail className="w-4 h-4 " />
+      <span className="instrument-serif tracking-widest text-[17px]">Mail Me</span>
     </RainbowButton>
   );
 }
