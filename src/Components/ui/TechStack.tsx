@@ -40,7 +40,7 @@ const TechIcon = ({
       <div className="flex flex-row items-center justify-center gap-3">
         <img className="" width="35" height="35" alt="" src={icon}/>
         <div className="flex flex-col">
-          <figcaption className="text-[12px] font-medium heading-font dark:text-white">
+          <figcaption className="text-[15px] instrument-serif dark:text-white">
             {name}
           </figcaption>
         </div>
@@ -53,7 +53,7 @@ export function TechStackMarquee() {
   return (
     <div className="selection:bg-neutral-700 relative mt-10 px-4 md:px-10 flex flex-col gap-3 w-full max-w-5xl overflow-hidden">
       <div>
-        <p className="heading-font font-bold">Technologies I use</p>
+        <p className="instrument-serif-bold text-[27px]">Technologies I use</p>
       </div>
       <Marquee pauseOnHover className="[--duration:60s] [--gap:1rem] ">
         {TachStack.map((tech) => (

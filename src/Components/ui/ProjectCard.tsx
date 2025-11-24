@@ -24,7 +24,7 @@ const projects: Project[] = [
   {
     name: "Cric-Scoreboard",
     description:
-      "CricScoreBoard is a full-stack MERN application that provides **live ball-by-ball scoring** for local cricket matches.\n\nIt includes an **admin panel** for scoring and a **shareable spectator link**, with updates powered by **Socket.IO**.",
+      "CricScoreBoard is a full-stack MERN application that provides live ball-by-ball scoring for local cricket matches. It includes an admin panel for scoring and a shareable spectator link, with updates powered by Socket.IO.",
     tools: ["React", "Node.js", "MongoDB", "Socket.IO", "Tailwind CSS"],
     image: "/cricScoreboard.png",
     link: {
@@ -36,7 +36,7 @@ const projects: Project[] = [
     name: "SyncSpace",
     description:
       "A robust application built for streamlined team collaboration and administrative control. SyncSpace features secure user authentication, role-based access, comprehensive team and task management, and real-time notifications.",
-    tools: ["React", "Node.js", "MongoDB", "Git", "Tailwind CSS"],
+    tools: ["React", "Node.js", "MongoDB", "Git", "Tailwind CSS", "Socket.IO"],
     image: "/syncSpace.png",
     link: {
       gitlink: "https://github.com/prodot-com/SyncSpace",
@@ -66,22 +66,24 @@ export function Projectcard() {
 
           {/* Header */}
           <CardHeader className="px-3 md:pt-1">
-            <CardTitle className="text-lg font-semibold hanken-grotesk-font">
+            <CardTitle className="instrument-serif-bold text-[20px]">
               {project.name}
             </CardTitle>
 
-            <div className="inter-font prose prose-sm dark:prose-invert text-[11px] max-w-none">
+            <div className="instrument-serif text-[12px] prose prose-sm dark:prose-invert md:text-[14px] max-w-none">
               <ReactMarkdown>{project.description}</ReactMarkdown>
             </div>
           </CardHeader>
 
           {/* Content */}
-          <CardContent className="px-3 pt-1 md:pt-2">
+          <CardContent className="px-3 pt-1 md:pt-2 mr-4">
             <div className="flex flex-wrap gap-2">
               {project.tools.map((tool) => (
                 <span
                   key={tool}
-                  className="text-xs font-normal bg-neutral-200 dark:bg-neutral-800 text-gray-800 dark:text-white px-2 py-1 rounded-[4px] border"
+                  className="text-[12px] font-normal bg-neutral-200 dark:bg-neutral-800 text-gray-800 dark:text-white px-2 py-1 rounded-[4px] border
+                  instrument-serif
+                  "
                 >
                   {tool}
                 </span>
@@ -97,7 +99,9 @@ export function Projectcard() {
                     href={project.link.livelink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-xs bg-black dark:bg-white text-white dark:text-black px-2 py-1 rounded-[4px] border hover:bg-neutral-700 dark:hover:bg-neutral-400 transition"
+                    className="flex items-center gap-1 text-[13px] bg-black dark:bg-white text-white dark:text-black px-2 py-1 rounded-[4px] border hover:bg-neutral-700 dark:hover:bg-neutral-400 transition
+                    instrument-serif-bold tracking-widest
+                    "
                   >
                     <Globe className="w-4 h-4" /> Live
                   </a>
@@ -108,7 +112,9 @@ export function Projectcard() {
                     href={project.link.gitlink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-xs bg-black dark:bg-white text-white dark:text-black px-2 py-1 rounded-[4px] border hover:bg-neutral-700 dark:hover:bg-neutral-400 transition"
+                    className="flex items-center gap-1 text-[13px] bg-black dark:bg-white text-white dark:text-black px-2 py-1 rounded-[4px] border hover:bg-neutral-700 dark:hover:bg-neutral-400 transition
+                    instrument-serif-bold tracking-widest
+                    "
                   >
                     <Github className="w-4 h-4" /> Source
                   </a>

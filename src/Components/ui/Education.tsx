@@ -31,7 +31,7 @@ const educations: EducationItem[] = [
 export function EducationCard() {
   return (
     <section className="px-2 md:px-8 md:pl-0 md:pt-3 md:pb-4">
-      <p className="text-[15px] md:text-xl font-bold heading-font mb-6 text-neutral-900 dark:text-white">
+      <p className="text-[15px] md:text-[27px] instrument-serif-bold mb-6 text-neutral-900 dark:text-white">
         Education
       </p>
 
@@ -55,14 +55,14 @@ export function EducationCard() {
                       href={edu.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-semibold heading-font text-[14px] md:text-[16px] text-neutral-800 dark:text-neutral-200"
+                      className="instrument-serif-bold text-[14px] md:text-[19px] text-neutral-800 dark:text-neutral-200"
                       >
                       {edu.name}
                     </a>
                     <ChevronRight className="w-4 text-neutral-800 dark:text-neutral-200 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-transform duration-200" />
                   </div>
 
-                  <p className="text-sm hanken-grotesk-font text-neutral-500 dark:text-neutral-400">
+                  <p className="instrument-serif-italic-bold text-[15px] text-neutral-500 dark:text-neutral-400">
                     {edu.subname}
                   </p>
                 </div>
@@ -70,9 +70,9 @@ export function EducationCard() {
 
               
               <div className="flex flex-col sm:flex-row items-end text-right text-neutral-600 dark:text-neutral-400 text-sm">
-                <p className="font-medium inter-font">{edu.startDate}</p>
+                <p className="instrument-serif-bold text-[15px]">{edu.startDate}</p>
                 <p className="px-1 md:inline hidden">-</p>
-                <p className="font-medium inter-font">{edu.endDate}</p>
+                <p className="instrument-serif-bold text-[15px]">{edu.endDate}</p>
               </div>
             </div>
           </div>

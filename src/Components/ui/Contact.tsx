@@ -11,12 +11,12 @@ export function Contact() {
   };
 
   return (
-    <section className="p- w-full pt-0 md:pl-0 md:pt-0 rounded-lg flex flex-col gap-4">
-      <h2 className="font-bold text-[15px] md:text-xl heading-font text-neutral-900 dark:text-neutral-100">
+    <section className="w-full pt-0 md:pl-0 md:pt-0 rounded-lg flex flex-col gap-4">
+      <h2 className="font-bold text-[15px] md:text-[27px] instrument-serif-bold text-neutral-900 dark:text-neutral-100">
         Contact
       </h2>
-      <p className="inter-font text-[13px] sm:text-[16px] text-neutral-600 dark:text-neutral-400">
-        Always open to discussing new projects, creative ideas, or opportunities. <span className="">Feel free</span> to reach out!
+      <p className="instrument-serif-italic text-[13px] md:text-[19px] text-neutral-600 dark:text-neutral-400">
+        Always open to discussing new projects, creative ideas, or opportunities. <span className="instrument-serif-italic-bold">Feel free to reach out!</span>
       </p>
       <div className="flex flex-col sm:flex-row gap-7 mt-2">
 

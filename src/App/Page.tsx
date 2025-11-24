@@ -67,8 +67,9 @@ const Home = () => {
             <div className="absolute bottom-0 top-0 left-0 w-[70px] bg-gradient-to-r from-white dark:from-neutral-900 to-transparent"></div>
             <div className="absolute bottom-0 top-0 right-0 w-[70px] bg-gradient-to-l from-white dark:from-neutral-900 to-transparent"></div>
 
-            <div className="absolute underline decoration-indigo-500 inset-0 flex items-center font-bold justify-center text-white dark:text-black selection:bg-neutral-400 italic text-xl md:text-2xl heading-font">
-              Build anything.
+            <div className="absolute underline decoration-indigo-500 dark:decoration-indigo-700 inset-0 flex items-center font-bold justify-center text-white dark:text-black selection:bg-neutral-400 italic 
+            text-[27px] md:text-[35px] instrument-serif-bold tracking-wide">
+              Build anything<span className="text-indigo-500 dark:text-indigo-700">.</span>
             </div>
           </div>
 
@@ -76,29 +77,29 @@ const Home = () => {
             <img
               src={pro2}
               alt="Profile"
-              className="w-28 h-28 md:w-35 md:h-35 rounded-full border-4 border-white dark:border-neutral-600 shadow-xl mb-4 object-cover md:ml-4"
+              className="w-41 h-41 md:w-42 md:h-42 rounded-full border-4 border-white dark:border-neutral-600 shadow-xl mb-4 object-cover md:ml-2"
             />
             <div className="">
               <div className="w-full md:w-auto flex justify-between mr-12">
-                  <h2 className="heading-font text-black dark:text-white selection:bg-neutral-700 text-3xl md:text-4xl font-semibold tracking-tight">
+                  <h2 className="instrument-serif-bold text-black dark:text-white selection:bg-neutral-700 text-[45px] md:text-[45px] font-semibold">
                 Probal Ghosh
               </h2>
             </div>
               
-              <p className="heading-font dark:text-neutral-500 text-neutral-600 text-sm md:text-[16px] mt-1">
+              <p className="instrument-serif-italic dark:text-neutral-500 text-neutral-800 text-[22px] md:text-[22px]">
                 21 • engineer • fullstack developer
               </p>
             </div>
           </div>
 
-          <div className="heading-font w-full pr-17 max-w-5xl px-4 lg:ml-12 mt-9 z-0">
+          <div className="w-full pr-17 max-w-5xl px-4 lg:ml-12 mt-9 z-0">
             <div className="flex">
-              <p className="selection:bg-neutral-700 font-bold text-2xl text-black dark:text-white">
+              <p className="selection:bg-neutral-700 text-[27px] md:text-[28px] text-black dark:text-white instrument-serif-bold">
                 About
               </p>
             </div>
 
-            <p className="selection:bg-neutral-700 text-black text-[12px] md:text-[15px] dark:text-neutral-400">
+            <p className="instrument-serif selection:bg-neutral-700 text-black text-[17px] md:text-[20px] dark:text-neutral-400">
               Hello! I'm a developer from Kolkata, India. I enjoy programming and
               exploring technology. Currently working on my own projects.{" "}
               <span className="font-bold dark:text-neutral-200">
@@ -113,7 +114,7 @@ const Home = () => {
           <GithubCard/>
 
           <div className="selection:bg-neutral-700 px-0 md:px-2 mt-9 font-bold w-full max-w-5xl">
-            <p className="pl-4 md:pl-8 heading-font text-[15px] md:text-xl">Featured Projects</p>
+            <p className="pl-4 md:pl-8 instrument-serif-bold text-[15px] md:text-[27px]">Featured Projects</p>
                   <Projectcard />
           </div>
 
@@ -132,7 +133,7 @@ const Home = () => {
           <div className="selection:bg-neutral-700 mt-7 pt-5 pl-4 md:px-9 border-t-1 dark:border-neutral-700 flex flex-col gap-3 w-full max-w-5xl min-h-[170px]">
             <p className="pl-2 flex items-center gap-1 hanken-grotesk-font">
               <Copyright className="w-4 sm:w-5"/> 
-              <span className="text-[15px] sm:text-[17px]">2025 Probal Ghosh. All rights reserved.</span>
+              <span className="instrument-serif-bold text-[15px] sm:text-[19px]">2025 Probal Ghosh. All rights reserved.</span>
             </p>
           </div>
 

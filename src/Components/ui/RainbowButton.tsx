@@ -18,7 +18,7 @@ export function RainbowButtonCustom() {
       className="flex items-center gap-2"
     >
       <Mail className="w-4 h-4" />
-      <span >Mail</span>
+      <span className="instrument-serif tracking-widest text-[15px]">Mail</span>
     </RainbowButton>
   );
 }

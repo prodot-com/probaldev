@@ -31,16 +31,18 @@ export function GithubCard() {
 
         <CardHeader className="px-2 md:pt-1">
             <div className="md:px-0">
-                <p className="font-bold text-black  dark:text-white text-[15px] md:text-xl heading-font selection:bg-neutral-600">
+                <p className="font-bold text-black  dark:text-white text-[15px] instrument-serif-bold md:text-[27px] selection:bg-neutral-600">
                 GitHub Contributions •{" "}
                 <Tooltip 
-                containerClassName="text-neutral-600 dark:text-neutral-400"
+                containerClassName="instrument-serif-italic-bold"
           content="let's follow in Github">
                 <span className="underline md:decoration-white md:dark:decoration-neutral-950 md:hover:decoration-green-500 decoration-green-500 cursor-pointer
                 text-black dark:text-white
                 ">
                     <a href="https://github.com/prodot-com/"
-                    target="blank">@prodot-com</a>
+                    target="blank"
+                    className='instrument-serif-italic-bold text-[27px]'
+                    >@prodot-com</a>
                 </span>
                 </Tooltip>
                 </p>
@@ -61,6 +63,7 @@ export function GithubCard() {
                 colorScheme={isDarkMode ? "dark" : "light"}
                 style={{
                     color: isDarkMode ? "white" : "black",
+                    fontFamily: "instrument-serif"
                 }}
                 />
             </div>
