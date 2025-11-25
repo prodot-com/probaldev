@@ -47,7 +47,7 @@ const Home = () => {
               <div className="h-full w-full flex justify-between items-center">
                 <h1
                 onClick={()=>navigate(0)}
-                className="cursor-pointer bitcount-double-ink hover:underline decoration-[#A22DA2] text-3xl tracking-tight transition delay-25">
+                className="cursor-pointer kablammo-font hover:underline decoration-indigo-700 text-[35px] text-indigo-700 tracking-tight transition delay-25">
                   probal
                 </h1>
               </div>
@@ -79,11 +79,11 @@ const Home = () => {
             <img
               src={pro2}
               alt="Profile"
-              className="w-41 h-41 md:w-42 md:h-42 rounded-full ring-4 ring-black/55 dark:ring-white/30 hover:ring-black/40 dark:hover:ring-white/20 transition-all delay-50 shadow-xl mb-4 object-cover md:ml-2"
+              className="w-41 h-41 md:w-42 md:h-42 rounded-full ring-4 ring-black/55 dark:ring-white/30 hover:ring-black/40 dark:hover:ring-white/20 transition-all delay-50 shadow-2xl shadow-black/75 dark:shadow-white/15 mb-4 object-cover md:ml-2"
             />
             <div className="">
-              <div className="w-full md:w-auto flex justify-between mr-12">
-                  <h2 className="instrument-serif-bold text-black dark:text-white  text-[45px] md:text-[45px] font-semibold">
+              <div className="w-full md:max-h-13 md:w-auto flex justify-between mr-12">
+                  <h2 className="instrument-serif-bold text-black dark:text-white text-[45px] md:text-[45px] ">
                 Probal Ghosh
               </h2>
             </div>

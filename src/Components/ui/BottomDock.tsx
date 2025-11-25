@@ -118,8 +118,9 @@ const BottomDock = ({className = ""}) => {
     </div>
   </div>
 
-  <div className="relative group" onClick={toggleDarkMode}>
+  <div className="relative group" >
     <AnimatedThemeToggler 
+    onClick={toggleDarkMode}
     className="px-1.5 py-1.5 hover:ml-2 rounded-full dark:hover:bg-neutral-700/25 dark:text-white hover:bg-neutral-300 transition-all duration-300 ease-in-out cursor-pointer"/>
     <span className="absolute bottom-12 left-1/2 -translate-x-1/2 opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 bg-black text-white text-xs px-2 py-1 rounded-md whitespace-nowrap instrument-serif text-[13px]">
       {isDarkMode ? "Light" : "Dark"}
