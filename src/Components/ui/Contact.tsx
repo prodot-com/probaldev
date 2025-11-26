@@ -1,6 +1,7 @@
-import { Copy} from "lucide-react";
+import { Copy, ArrowUpLeft} from "lucide-react";
 import { RainbowButtonCustom } from "./RainbowButton";
 import { toast } from "sonner";
+import { Tooltip } from "../aceternity/tooltip-card";
 
 export function Contact() {
   const email = "xprobal52@gmail.com";
@@ -16,7 +17,13 @@ export function Contact() {
         Contact
       </h2>
       <p className="instrument-serif-italic text-[19px] md:text-[19px] text-neutral-600 dark:text-neutral-400">
-        Always open to discussing new projects, creative ideas, or opportunities. <span className="instrument-serif-italic-bold">Feel free to reach out!</span>
+        Always open to discussing new projects, creative ideas, or opportunities.{" "} 
+        <Tooltip
+        containerClassName="instrument-serif-italic-bold"
+        content={<ContactTooltipCard/>}
+        >
+          <span className="instrument-serif-italic-bold cursor-pointer">Feel free to reach out!</span>
+        </Tooltip>
       </p>
       <div className="flex flex-col sm:flex-row gap-7 mt-2">
 
@@ -27,9 +34,18 @@ export function Contact() {
           className="group cursor-pointer flex items-center justify-center gap-2 px-4 py-2 text-[15px] md:text-sm font-semibold rounded-[4px] border border-neutral-300 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-colors"
         >
           <Copy className="w-5 h-5" />
-          <span className="">{email}</span>
+          <span className="instrument-serif-bold tracking-wider text-[16px]">{email}</span>
         </button>
       </div>
     </section>
   );
+}
+
+const ContactTooltipCard = ()=>{
+  return(
+    <div className="flex gap-1">
+      <ArrowUpLeft className="rotate-290"/>
+      <p>Leave me a mail</p>
+    </div>
+  )
 }

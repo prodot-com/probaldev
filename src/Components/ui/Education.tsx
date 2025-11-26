@@ -12,7 +12,7 @@ type EducationItem = {
 const educations: EducationItem[] = [
   {
     icon: "/gcetts.jpeg",
-    name: "Government College of Engineering & Textile Technology",
+    name: "Government College of Engineering & Textile Technology, Serampore",
     subname: "B.Tech in Information Technology",
     startDate: "2023",
     endDate: "2027",

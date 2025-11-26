@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 import BottomDock from "@/Components/ui/BottomDock";
 import TopArrow from "@/Components/ui/TopArrow";
 import GithubCard from "@/Components/ui/GithubCard";
+import { Tooltip } from "@/Components/aceternity/tooltip-card";
 
 
 const Home = () => {
@@ -55,7 +56,7 @@ const Home = () => {
             {/* <div className="hidden md:block absolute bottom-0 top-0 right-0 w-[400px] bg-gradient-to-r from-transparent dark:from-neutral-900 to-indigo-700"></div> */}
           </div>
 
-          <ScrollProgress className="fixed left-0 w-full h-[4px] bg-gradient-to-r from-green-500 via-purple-500 to-blue-500 z-40 transition-all duration-300" />
+          <ScrollProgress className="fixed left-0 w-full h-[5px] transition-all duration-300" />
 
           <div className="relative w-full max-w-5xl mt-[70px] overflow-hidden">
             <img
@@ -104,9 +105,14 @@ const Home = () => {
             <p className="instrument-serif  text-black text-[17px] md:text-[20px] dark:text-neutral-400">
               Hello! I'm a developer from Kolkata, India. I enjoy programming and
               exploring technology. Currently working on my own projects.{" "}
-              <span className="font-bold dark:text-neutral-200">
+              <Tooltip
+              containerClassName="instrument-serif-italic-bold"
+              content="Leave me a message"
+              >
+              <span className="font-bold dark:text-neutral-200 instrument-serif-bold cursor-pointer hover:underline">
                 Open to work
               </span>
+              </Tooltip>
               , freelance, or collaborate.
             </p>
           </div>
