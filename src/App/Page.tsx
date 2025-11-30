@@ -19,7 +19,7 @@ const Home = () => {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-4 items-stretch bg-white dark:bg-neutral-900 min-h-screen ">
-      <div className="hidden lg:block">
+      <div className="hidden lg:block ">
         <div className="h-full w-full bg-white dark:bg-neutral-950 relative">
           <div
           className="absolute inset-0 z-0 block dark:hidden"
