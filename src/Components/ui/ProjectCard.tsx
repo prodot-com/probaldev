@@ -8,6 +8,7 @@ import {
 import { BorderBeam } from "../magicui/border-beam";
 import ReactMarkdown from "react-markdown";
 import { Github, Globe } from "lucide-react";
+import { ShinyButton } from "../magicui/shiny-button";
 
 type Project = {
   name: string;
@@ -144,7 +145,14 @@ export function Projectcard() {
         </Card>
       ))}
     </div>
-    <p className="ml-4 md:ml-8">More coming soon</p>
+    <div className="flex justify-start">
+      {/* <p className="ml-4 md:ml-8 border p-2 instrument-serif 
+      bg-black text-white rounded-[4px] md:text-[17px]
+      ">More coming soon</p> */}
+      <ShinyButton className="ml-4 md:ml-8 rounded-[4px] bg-black text-white
+      instrument-serif-bold text-[17px] px-4 cursor-default border dark:border-neutral-600
+      ">More coming soon</ShinyButton>
+    </div>
     </div>
   );
 }
