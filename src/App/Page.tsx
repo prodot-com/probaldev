@@ -122,7 +122,7 @@ const Home = () => {
           <GithubCard/>
 
           <div className=" px-0 md:px-2 mt-9 font-bold w-full max-w-5xl">
-            <p className="pl-4 md:pl-8 instrument-serif-bold text-[27px] md:text-[27px]">Featured Projects</p>
+            {/* <p className="pl-4 md:pl-8 instrument-serif-bold text-[27px] md:text-[27px]">Featured Projects</p> */}
                   <Projectcard />
           </div>
 
