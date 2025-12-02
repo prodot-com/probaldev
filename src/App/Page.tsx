@@ -1,4 +1,4 @@
-import pro2 from "../../assets/DP3.jpg";
+import pro2 from "../../assets/DP4.jpg";
 import hero1 from "../../assets/hero1.jpg";
 import {Copyright} from "lucide-react";
 import {TechStackMarquee } from "@/Components/ui/TechStack";
