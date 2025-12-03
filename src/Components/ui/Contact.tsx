@@ -16,7 +16,7 @@ export function Contact() {
       <h2 className="font-bold text-[27px] md:text-[27px] instrument-serif-bold text-neutral-900 dark:text-neutral-100">
         Contact.
       </h2>
-      <p className="instrument-serif-italic text-[19px] md:text-[19px] text-neutral-600 dark:text-neutral-400">
+      <div className="instrument-serif-italic text-[19px] md:text-[19px] text-neutral-600 dark:text-neutral-400">
         Always open to discussing new projects, creative ideas, or opportunities.{" "} 
         <Tooltip
         containerClassName="instrument-serif-italic-bold"
@@ -24,7 +24,7 @@ export function Contact() {
         >
           <span className="instrument-serif-italic-bold cursor-pointer">Feel free to reach out!</span>
         </Tooltip>
-      </p>
+      </div>
       <div className="flex flex-col sm:flex-row gap-7 mt-2">
 
         <RainbowButtonCustom/>
@@ -43,9 +43,9 @@ export function Contact() {
 
 const ContactTooltipCard = ()=>{
   return(
-    <div className="flex gap-1">
+    <span className="flex gap-1">
       <ArrowUpLeft className="rotate-290"/>
       <p>Leave me a mail</p>
-    </div>
+    </span>
   )
 }

@@ -1,6 +1,8 @@
 import pro2 from "../../assets/DP4.jpg";
 import hero1 from "../../assets/hero1.jpg";
+import BGM from "../../assets/BGM.mp3"
 import {Copyright} from "lucide-react";
+import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 import {TechStackMarquee } from "@/Components/ui/TechStack";
 import { ScrollProgress } from "@/Components/magicui/scroll-progress";
 import { Projectcard } from "@/Components/ui/ProjectCard";
@@ -12,10 +14,80 @@ import BottomDock from "@/Components/ui/BottomDock";
 import TopArrow from "@/Components/ui/TopArrow";
 import GithubCard from "@/Components/ui/GithubCard";
 import { Tooltip } from "@/Components/aceternity/tooltip-card";
+import { useEffect, useRef, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 const Home = () => {
   const navigate = useNavigate()
+  const [bgmPlaying, setBgmPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement| null>(null);
+
+  useEffect(()=>{
+    const audio = new Audio(BGM);
+    audio.loop = true;
+    audioRef.current = audio;
+
+    const startAudio =async ()=>{
+      const a = audioRef.current;
+
+      if(!a?.paused){
+        removeListner()
+        return;
+      }
+
+      try {
+        await a.play()
+        setBgmPlaying(true)
+      } catch (error) {
+        console.log(error)
+      }
+
+      removeListner()
+    }
+
+    const removeListner = ()=>{
+      window.removeEventListener("click", startAudio);
+      window.removeEventListener("touchstart", startAudio);
+      window.removeEventListener("pointerdown", startAudio);
+    }
+
+    window.addEventListener("click", startAudio)
+    window.addEventListener("pointerdown", startAudio);
+    window.addEventListener("pointerup", startAudio);
+
+    return ()=>{
+      removeListner();
+      audio.pause();
+      audioRef.current = null;
+      setBgmPlaying(false);
+    }
+
+  },[])
+
+  const handlePlay = async ()=>{
+      let audio =  audioRef.current
+
+      if(!audio){
+        audio =  new Audio(BGM);
+        audio.loop = true;
+        audioRef.current = audio
+      }
+
+      try {
+        await audio.play()
+        setBgmPlaying(true)
+      } catch (error) {
+        console.log(error)
+      }
+  }
+
+  const handlePause = async()=>{
+    const audio = audioRef.current
+    if(!audio)return
+    audio.pause()
+    setBgmPlaying(false)
+  }
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-4 items-stretch bg-white dark:bg-neutral-900 min-h-screen ">
@@ -44,16 +116,37 @@ const Home = () => {
         <div className="flex flex-col items-center min-h-screen relative overflow-hidden">
           <div className="fixed top-0 left-0 w-full h-[70px] bg-white dark:bg-black shadow z-30 flex items-center justify-center">
             {/* <div className="hidden md:block absolute bottom-0 top-0 left-0 w-[400px] bg-gradient-to-r from-indigo-600 dark:from-neutral-900 to-transparent"></div> */}
-            <div className="w-full max-w-3xl h-full px-2">
-              <div className="h-full w-full flex justify-between items-center">
+            <div className="w-full max-w-3xl h-full px-2 flex justify-between items-center">
+              <div className="h-full flex justify-between items-center">
                 <h1
                 onClick={()=>navigate(0)}
                 className="cursor-pointer kablammo-font hover:underline decoration-indigo-700 text-[35px] text-indigo-700 tracking-tight transition delay-25">
                   probal
                 </h1>
               </div>
+              <div className="mr-5">
+              {bgmPlaying ? (
+              <button
+                onClick={handlePause}
+                className="w-10 h-10 flex items-center justify-center rounded-full border border-neutral-400 
+                hover:bg-neutral-200 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-200 
+                transition-colors cursor-pointer"
+              >
+              <FontAwesomeIcon icon={faPause} size="lg" />
+              </button>
+          ) : (
+              <button
+                onClick={handlePlay}
+                className="w-10 h-10 flex items-center justify-center rounded-full border border-neutral-400 
+                hover:bg-neutral-200 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-200 
+                transition-colors cursor-pointer"
+              >
+              <FontAwesomeIcon icon={faPlay} size="lg" />
+              </button>
+            )}
+          </div>
+
             </div>
-            {/* <div className="hidden md:block absolute bottom-0 top-0 right-0 w-[400px] bg-gradient-to-r from-transparent dark:from-neutral-900 to-indigo-700"></div> */}
           </div>
 
           <ScrollProgress className="fixed left-0 w-full h-[5px] transition-all duration-300" />
@@ -103,7 +196,7 @@ const Home = () => {
               </p>
             </div>
 
-            <p className="instrument-serif  text-black text-[17px] md:text-[20px] dark:text-neutral-400">
+            <div className="instrument-serif  text-black text-[17px] md:text-[20px] dark:text-neutral-400">
               Hello! I'm a developer from Kolkata, India. I enjoy programming and
               exploring technology. Currently working on my own projects.{" "}
               <Tooltip
@@ -115,7 +208,7 @@ const Home = () => {
               </span>
               </Tooltip>
               , freelance, or collaborate.
-            </p>
+            </div>
           </div>
 
           <TechStackMarquee/>
@@ -123,7 +216,6 @@ const Home = () => {
           <GithubCard/>
 
           <div className=" px-0 md:px-2 mt-9 font-bold w-full max-w-5xl">
-            {/* <p className="pl-4 md:pl-8 instrument-serif-bold text-[27px] md:text-[27px]">Featured Projects</p> */}
                   <Projectcard />
           </div>
 

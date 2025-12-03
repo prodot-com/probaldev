@@ -31,7 +31,7 @@ export function GithubCard() {
 
         <CardHeader className="px-1 md:px-2 md:pt-1">
             <div className="md:px-0">
-                <p className="font-bold text-black  dark:text-white text-[26px] instrument-serif-bold md:text-[27px] selection:bg-neutral-600">
+                <div className="font-bold text-black  dark:text-white text-[26px] instrument-serif-bold md:text-[27px] selection:bg-neutral-600">
                 GitHub Contributions •{" "}
                 <Tooltip 
                 containerClassName="instrument-serif-italic-bold"
@@ -45,7 +45,7 @@ export function GithubCard() {
                     >@prodot-com</a>
                 </span>
                 </Tooltip>
-                </p>
+                </div>
             </div>
         </CardHeader>
 
