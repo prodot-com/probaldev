@@ -48,8 +48,8 @@ const Home = () => {
 
     const removeListner = ()=>{
       window.removeEventListener("click", startAudio);
-      window.removeEventListener("touchstart", startAudio);
       window.removeEventListener("pointerdown", startAudio);
+      window.removeEventListener("pointerup", startAudio);
     }
 
     window.addEventListener("click", startAudio)
