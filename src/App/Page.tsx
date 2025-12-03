@@ -79,8 +79,9 @@ const Home = () => {
           <div className=" w-full max-w-5xl mt-[-56px] md:mt-[-72px] px-4 lg:ml-12 z-20">
             <img
               src={pro2}
-              alt="Profile"
-              className="w-41 h-41 md:w-42 md:h-42 rounded-full ring-4 ring-black/55 dark:ring-white/30 hover:ring-black/40 dark:hover:ring-white/20 transition-all delay-50 shadow-2xl shadow-black/75 dark:shadow-white/15 mb-4 object-cover md:ml-2"
+              alt="Profile Image"
+              className="w-41 h-41 md:w-42 md:h-42 rounded-full ring-4 ring-black/55 dark:ring-white/30 hover:ring-black/40 dark:hover:ring-white/20 transition-all delay-50 
+              shadow-2xl shadow-black/75 dark:shadow-white/15 mb-4 object-cover md:ml-2"
             />
             <div className="">
               <div className="w-full md:max-h-13 md:w-auto flex justify-between mr-12">
@@ -98,7 +99,7 @@ const Home = () => {
           <div className="w-full pr-17 max-w-5xl px-4 lg:ml-12 mt-9 z-0">
             <div className="flex">
               <p className=" text-[27px] md:text-[28px] text-black dark:text-white instrument-serif-bold">
-                About
+                About.
               </p>
             </div>
 
@@ -141,7 +142,7 @@ const Home = () => {
           <div className=" mt-7 pt-5 pl-4 md:px-9 border-t-1 dark:border-neutral-700 flex flex-col gap-3 w-full max-w-5xl min-h-[170px]">
             <p className="pl-2 flex items-center gap-1">
               <Copyright className="w-5 sm:w-5"/> 
-              <span className="instrument-serif text-[19px] sm:text-[19px]">2025 Designed & Developed by <span className="text-[21px] instrument-serif-bold">Probal</span></span>
+              <span className="instrument-serif text-[19px] sm:text-[19px]">2025 Designed & Developed by <span className="text-[21px] instrument-serif-bold underline ">Probal.</span></span>
             </p>
           </div>
 

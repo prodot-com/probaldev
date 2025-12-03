@@ -34,7 +34,7 @@ export function Experience() {
   return (
     <section className="px-2 md:px-8 md:pl-0 md:pt-3 pb-6 md:pb-5">
       <p className="text-[27px] md:text-[27px] font-bold instrument-serif-bold mb-6 text-neutral-900 dark:text-white">
-        Work Experience
+        Work Experience.
       </p>
 
       <div className="space-y-7">

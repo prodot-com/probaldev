@@ -6,15 +6,20 @@ export function RainbowButtonCustom() {
   const email = "xprobal52@gmail.com";
 
   const handleClick = ()=>{
-    toast.error("Redirecting");
+    toast.error("Opening mail client...");
     setTimeout(() => {
-      window.location.href = `mailto:${email}`
+      // try {
+      //   window.location.href = `mailto:${email}`
+      // } catch {
+      //   window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`, "_blank")
+      // }
+      window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`, "_blank")
     }, 2000);
   }
 
   return (
     <RainbowButton
-      onClick={() => handleClick()}
+      onClick={handleClick}
       className="flex items-center gap-2"
       size="lg"
     >

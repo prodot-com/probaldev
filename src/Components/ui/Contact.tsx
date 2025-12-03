@@ -14,7 +14,7 @@ export function Contact() {
   return (
     <section className="w-full pt-0 md:pl-0 md:pt-0 rounded-lg flex flex-col gap-4">
       <h2 className="font-bold text-[27px] md:text-[27px] instrument-serif-bold text-neutral-900 dark:text-neutral-100">
-        Contact
+        Contact.
       </h2>
       <p className="instrument-serif-italic text-[19px] md:text-[19px] text-neutral-600 dark:text-neutral-400">
         Always open to discussing new projects, creative ideas, or opportunities.{" "} 

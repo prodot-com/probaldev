@@ -51,7 +51,7 @@ export function Projectcard() {
   return (
     <div>
       <p className="ml-4 md:ml-8 text-[27px] md:text-[29px] font-bold instrument-serif-bold text-neutral-900 dark:text-white">
-        Featured Projects
+        Featured Projects.
       </p>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 md:px-8 place-items-center">
       
