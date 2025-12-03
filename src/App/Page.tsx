@@ -128,7 +128,7 @@ const Home = () => {
               {bgmPlaying ? (
               <button
                 onClick={handlePause}
-                className="w-10 h-10 flex items-center justify-center rounded-full border border-neutral-400 
+                className="w-10 h-10 flex items-center justify-center rounded-full 
                 hover:bg-neutral-200 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-200 
                 transition-colors cursor-pointer"
               >
@@ -137,7 +137,7 @@ const Home = () => {
           ) : (
               <button
                 onClick={handlePlay}
-                className="w-10 h-10 flex items-center justify-center rounded-full border border-neutral-400 
+                className="w-10 h-10 flex items-center justify-center rounded-full  
                 hover:bg-neutral-200 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-200 
                 transition-colors cursor-pointer"
               >
