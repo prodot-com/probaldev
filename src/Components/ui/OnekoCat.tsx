@@ -176,6 +176,7 @@ export default function OnekoCat() {
         top: `${nekoPos.y - 16}px`,
         zIndex: 2147483647,
         backgroundImage: 'url(/oneko.gif)',
+        filter: "drop-shadow(2px 2px 4px rgba(0,0,0,0.6))",
       }}
     />
   );
