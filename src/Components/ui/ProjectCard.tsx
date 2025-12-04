@@ -49,6 +49,7 @@ const projects: Project[] = [
 
 export function Projectcard() {
   return (
+    <div className="px-0 md:px-2 mt-9 font-bold w-full max-w-5xl">
     <div>
       <p className="ml-4 md:ml-8 text-[27px] md:text-[29px] font-bold instrument-serif-bold text-neutral-900 dark:text-white">
         Featured Projects.
@@ -152,6 +153,7 @@ export function Projectcard() {
       <ShinyButton className="ml-4 md:ml-8 rounded-[4px] bg-black text-white
       instrument-serif-bold text-[17px] px-4 cursor-default border dark:border-neutral-600
       ">More coming soon</ShinyButton>
+    </div>
     </div>
     </div>
   );

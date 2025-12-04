@@ -32,6 +32,7 @@ export function Experience() {
   };
 
   return (
+    <div className="px-2 pl-3 md:pl-11 mt-3 font-bold w-full max-w-5xl">
     <section className="px-2 md:px-8 md:pl-0 md:pt-3 pb-6 md:pb-5">
       <p className="text-[27px] md:text-[27px] font-bold instrument-serif-bold mb-6 text-neutral-900 dark:text-white">
         Work Experience.
@@ -95,5 +96,6 @@ export function Experience() {
         ))}
       </div>
     </section>
+    </div>
   );
 }
