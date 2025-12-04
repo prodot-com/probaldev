@@ -12,6 +12,7 @@ import Profile from "@/Components/ui/Profile";
 import About from "@/Components/ui/About";
 import Footer from "@/Components/ui/Footer";
 import Navbar from "@/Components/ui/Navbar";
+import OnekoCat from "@/Components/ui/OnekoCat";
 
 
 const Home = () => {
@@ -55,6 +56,7 @@ const Home = () => {
           <Footer/>
           <BottomDock/>
           <TopArrow/>
+          <OnekoCat/>
 
         </div>
       </div>
