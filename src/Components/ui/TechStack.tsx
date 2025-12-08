@@ -1,23 +1,28 @@
 import { cn } from "@/lib/utils"
 import { Marquee } from "../magicui/marquee"
 
-const TachStack = [
-  { name: "JavaScript", category: "language", icon: "/techicons/javascript.svg" },
-  { name: "TypeScript", category: "language", icon: "/techicons/typescript.svg" },
-  { name: "Java", category: "language", icon: "/techicons/java.svg" },
-  { name: "Python", category: "language", icon: "/techicons/python.svg" },
-  { name: "React.js", category: "framework", icon: "/techicons/react.svg" },
+const TechStack = [
+  { name: "JavaScript", category: "language", icon: "/techicons/javascript2.svg" },
+  { name: "TypeScript", category: "language", icon: "/techicons/typescript2.svg" },
+  { name: "Java", category: "language", icon: "/techicons/java2.svg" },
+  { name: "Python", category: "language", icon: "/techicons/python2.svg" },
+  { name: "React.js", category: "framework", icon: "/techicons/react2.svg" },
   { name: "Express.js", category: "framework", icon: "/techicons/express.svg" },
-  { name: "Node.js", category: "framework", icon: "/techicons/node.svg" },
-  { name: "Tailwind CSS", category: "framework", icon: "/techicons/tailwind.svg" },
-  { name: "MongoDB", category: "database", icon: "/techicons/mongodb.svg" },
-  { name: "PostgreSQL", category: "database", icon: "/techicons/postgresql.svg" },
-  { name: "Git", category: "tool", icon: "/techicons/git.svg" },
-  { name: "Google Cloud", category: "tool", icon: "/techicons/google-cloud.svg" },
-  { name: "Postman", category: "tool", icon: "/techicons/postman.svg" },
+  { name: "Node.js", category: "framework", icon: "/techicons/node2.svg" },
+  { name: "Tailwind CSS", category: "framework", icon: "/techicons/tailwind2.svg" },
+  { name: "Motion", category: "framework", icon: "/techicons/motion2.svg" },
+  { name: "MongoDB", category: "database", icon: "/techicons/mongodb2.svg" },
+  { name: "PostgreSQL", category: "database", icon: "/techicons/postgresql2.svg" },
+  { name: "Git", category: "tool", icon: "/techicons/git2.svg" },
+  { name: "Google Cloud", category: "tool", icon: "/techicons/google-cloud2.svg" },
+  { name: "Postman", category: "tool", icon: "/techicons/postman2.svg" },
   { name: "Github", category: "tool", icon: "/techicons/github.svg" },
+  { name: "Vercel", category: "tool", icon: "/techicons/vercel.svg" },
+  { name: "Firebase", category: "tool", icon: "/techicons/firebase2.svg" },
 ];
 
+const firstRow = TechStack.slice(0, TechStack.length / 2)
+const secondRow = TechStack.slice(TechStack.length / 2)
 
 
 const TechIcon = ({
@@ -56,7 +61,12 @@ export function TechStackMarquee() {
         <p className="instrument-serif-bold text-[27px]">Technologies I use.</p>
       </div>
       <Marquee pauseOnHover className="[--duration:60s] [--gap:1rem] ">
-        {TachStack.map((tech) => (
+        {firstRow.map((tech) => (
+          <TechIcon key={tech.name} {...tech} />
+        ))}
+      </Marquee>
+      <Marquee pauseOnHover className="[--duration:40s] [--gap:1rem] ">
+        {secondRow.map((tech) => (
           <TechIcon key={tech.name} {...tech} />
         ))}
       </Marquee>

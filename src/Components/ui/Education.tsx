@@ -17,7 +17,7 @@ const educations: EducationItem[] = [
     startDate: "2023",
     endDate: "2027",
     link: "https://www.gcetts.ac.in/",
-  },
+  }, 
   {
     icon: "/rkm.png",
     name: "Sargachi Ramakrishna Mission High School",
