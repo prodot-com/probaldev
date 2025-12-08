@@ -48,7 +48,7 @@ export function EducationCard() {
                 <img
                   src={edu.icon}
                   alt={edu.name}
-                  className="w-7 h-7 md:w-12 md:h-12 p-1 rounded-full object-cover border border-neutral-300 dark:border-neutral-700"
+                  className="w-11 h-11 md:w-12 md:h-12 p-1 rounded-full object-cover border border-neutral-300 dark:border-neutral-700"
                 />
                 <div>
                   <div className="inline-flex items-center gap-1 group">

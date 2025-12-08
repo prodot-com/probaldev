@@ -19,6 +19,7 @@ type Project = {
     gitlink?: string;
     livelink?: string;
   };
+  status: boolean;
 };
 
 const projects: Project[] = [
@@ -32,6 +33,7 @@ const projects: Project[] = [
       gitlink: "https://github.com/prodot-com/Cric-Scoreboard",
       livelink: "https://cric-scoreboard.vercel.app/",
     },
+    status: true,
   },
   {
     name: "SyncSpace",
@@ -43,6 +45,7 @@ const projects: Project[] = [
       gitlink: "https://github.com/prodot-com/SyncSpace",
       livelink: "https://sync-space-dun.vercel.app/",
     },
+    status: true,
   },
   
 ];
@@ -125,6 +128,19 @@ export function Projectcard() {
                     <Github className="w-4 h-4" /> Source
                   </a>
                 )}
+
+                  <p 
+                  className="flex items-center gap-1 text-[13px] 
+                  bg-green-600 text-white dark:text-black px-2 py-1 
+                  rounded-[4px] border
+                    instrument-serif-bold tracking-widest"
+                  >
+                    <span>
+                      <div className="w-2 h-2 animate-pulse bg-white dark:bg-black rounded-full"></div>
+                    </span>
+                    {project.status ? "Working" :"In Developement"}
+                  </p>
+        
               </div>
             )}
           </CardFooter>

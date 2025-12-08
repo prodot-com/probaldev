@@ -14,7 +14,7 @@ type ExperienceItem = {
 
 const experiences: ExperienceItem[] = [
   {
-    icon: "/zaalima.png",
+    icon: "/zaalima.svg",
     company: "Zaalima Development",
     sub: "Software Engineer",
     startDate: "August 2025",
@@ -48,11 +48,13 @@ export function Experience() {
             >
               {/* Left: Icon + Company Info */}
               <div className="flex items-center gap-4">
+                <div className="border rounded-full">
                 <img
                   src={exp.icon}
                   alt={exp.company}
-                  className="w-7 h-7 md:w-12 md:h-12 p-1 rounded-full object-cover border border-neutral-300 dark:border-neutral-700"
+                  className="w-11 h-11 md:w-12 md:h-12 p-2 border-neutral-300 dark:border-neutral-700"
                 />
+                </div>
                 <div>
                   <div className="inline-flex items-center gap-1">
                     <p className="font-semibold instrument-serif-bold text-[19px] md:text-[19px] text-neutral-800 dark:text-neutral-200">
