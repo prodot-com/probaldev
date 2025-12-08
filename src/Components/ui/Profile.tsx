@@ -17,7 +17,7 @@ const Profile = () => {
             </div>
               
               <p className="instrument-serif-italic dark:text-neutral-500 text-neutral-800 text-[22px] md:text-[22px]">
-                22 • engineer • fullstack developer
+                21 • engineer • fullstack developer
               </p>
             </div>
           </div>

@@ -18,7 +18,7 @@ Open to freelance, collabs, or anything exciting. If you’ve got an idea worth 
               content="Leave a message below"
               >
               <span className="font-bold dark:text-neutral-200 instrument-serif-bold cursor-pointer hover:underline">
-                let's chat.
+                let's connect.
               </span>
               </Tooltip>
               
