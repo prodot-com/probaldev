@@ -47,7 +47,7 @@ const ContactTooltipCard = ()=>{
   return(
     <span className="flex gap-1">
       <ArrowUpLeft className="rotate-290"/>
-      <p>Leave me a mail</p>
+      <p>Leave a mail</p>
     </span>
   )
 }

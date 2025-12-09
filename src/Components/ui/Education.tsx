@@ -5,7 +5,7 @@ type EducationItem = {
   name: string;
   subname?: string;
   startDate: string;
-  endDate: string;
+  endDate?: string;
   link?: string;
 };
 
@@ -15,7 +15,6 @@ const educations: EducationItem[] = [
     name: "Government College of Engineering & Textile Technology, Serampore",
     subname: "B.Tech in Information Technology",
     startDate: "2023",
-    endDate: "2027",
     link: "https://www.gcetts.ac.in/",
   }, 
   {
@@ -73,7 +72,7 @@ export function EducationCard() {
               <div className="flex flex-col sm:flex-row items-end text-right text-neutral-600 dark:text-neutral-400 text-sm">
                 <p className="instrument-serif-bold text-[15px]">{edu.startDate}</p>
                 <p className="px-1 mb-[3px] md:inline hidden">-</p>
-                <p className="instrument-serif-bold text-[15px]">{edu.endDate}</p>
+                <p className="instrument-serif-bold text-[15px]">{edu.endDate ? edu.endDate: "Present"}</p>
               </div>
             </div>
           </div>
