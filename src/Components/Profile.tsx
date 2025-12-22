@@ -1,4 +1,4 @@
-import profile from "../../../assets/DP4.jpg"
+import profile from "../../assets/DP4.jpg"
 
 const Profile = () => {
   return (
