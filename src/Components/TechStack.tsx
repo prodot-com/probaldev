@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils"
-import { Marquee } from "../magicui/marquee"
+import { cn } from "@/lib/utils";
+import { Marquee } from "./magicui/marquee";
 
 // const TechStack2 = [
 //   { name: "JavaScript", category: "language", icon: "/techicons/javascript2.svg" },
@@ -21,36 +21,49 @@ import { Marquee } from "../magicui/marquee"
 //   { name: "Firebase", category: "tool", icon: "/techicons/firebase2.svg" },
 // ];
 const TechStack = [
-  { name: "JavaScript", category: "language", icon: "/techicons/javascript.svg" },
-  { name: "TypeScript", category: "language", icon: "/techicons/typescript.svg" },
+  {
+    name: "JavaScript",
+    category: "language",
+    icon: "/techicons/javascript.svg",
+  },
+  {
+    name: "TypeScript",
+    category: "language",
+    icon: "/techicons/typescript.svg",
+  },
   { name: "Java", category: "language", icon: "/techicons/java.svg" },
   { name: "Python", category: "language", icon: "/techicons/python.svg" },
   { name: "React.js", category: "framework", icon: "/techicons/react.svg" },
   { name: "Express.js", category: "framework", icon: "/techicons/express.svg" },
   { name: "Node.js", category: "framework", icon: "/techicons/node.svg" },
-  { name: "Tailwind CSS", category: "framework", icon: "/techicons/tailwind.svg" },
+  {
+    name: "Tailwind CSS",
+    category: "framework",
+    icon: "/techicons/tailwind.svg",
+  },
   { name: "Motion", category: "framework", icon: "/techicons/motion.svg" },
   { name: "MongoDB", category: "database", icon: "/techicons/mongodb.svg" },
-  { name: "PostgreSQL", category: "database", icon: "/techicons/postgresql.svg" },
+  {
+    name: "PostgreSQL",
+    category: "database",
+    icon: "/techicons/postgresql.svg",
+  },
   { name: "Git", category: "tool", icon: "/techicons/git.svg" },
-  { name: "Google Cloud", category: "tool", icon: "/techicons/google-cloud.svg" },
+  {
+    name: "Google Cloud",
+    category: "tool",
+    icon: "/techicons/google-cloud.svg",
+  },
   { name: "Postman", category: "tool", icon: "/techicons/postman.svg" },
   { name: "Github", category: "tool", icon: "/techicons/github.svg" },
   { name: "Vercel", category: "tool", icon: "/techicons/vercel.svg" },
   { name: "Firebase", category: "tool", icon: "/techicons/firebase.svg" },
 ];
 
-const firstRow = TechStack.slice(0, TechStack.length / 2)
-const secondRow = TechStack.slice(TechStack.length / 2)
+const firstRow = TechStack.slice(0, TechStack.length / 2);
+const secondRow = TechStack.slice(TechStack.length / 2);
 
-
-const TechIcon = ({
-  icon,
-  name
-}: {
-  icon: string
-  name: string
-}) => {
+const TechIcon = ({ icon, name }: { icon: string; name: string }) => {
   return (
     <figure
       className={cn(
@@ -62,7 +75,7 @@ const TechIcon = ({
       )}
     >
       <div className="flex flex-row items-center justify-center gap-3">
-        <img className="" width="35" height="35" alt="" src={icon}/>
+        <img className="" width="35" height="35" alt="" src={icon} />
         <div className="flex flex-col">
           <figcaption className="text-[17px] md:text-[15px] instrument-serif dark:text-white">
             {name}
@@ -70,8 +83,8 @@ const TechIcon = ({
         </div>
       </div>
     </figure>
-  )
-}
+  );
+};
 
 export function TechStackMarquee() {
   return (
@@ -92,6 +105,5 @@ export function TechStackMarquee() {
       <div className="absolute left-3 top-8 md:left-10 md:top-8 w-20 h-full bg-gradient-to-r from-white dark:from-neutral-900 to-transparent pointer-events-none z-10" />
       <div className="absolute right-3 md:right-10 md:top-8 top-8 w-20 h-full bg-gradient-to-l from-white dark:from-neutral-900 to-transparent pointer-events-none z-10" />
     </div>
-  )
+  );
 }
-

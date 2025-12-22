@@ -1,11 +1,11 @@
-import { RainbowButton } from "../magicui/rainbow-button";
+import { RainbowButton } from "./magicui/rainbow-button";
 import { Mail } from "lucide-react";
 import { toast } from "sonner";
 
 export function RainbowButtonCustom() {
   const email = "xprobal52@gmail.com";
 
-  const handleClick = ()=>{
+  const handleClick = () => {
     toast.error("Opening mail client...");
     setTimeout(() => {
       // try {
@@ -13,9 +13,12 @@ export function RainbowButtonCustom() {
       // } catch {
       //   window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`, "_blank")
       // }
-      window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`, "_blank")
+      window.open(
+        `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`,
+        "_blank"
+      );
     }, 2000);
-  }
+  };
 
   return (
     <RainbowButton
@@ -24,7 +27,9 @@ export function RainbowButtonCustom() {
       size="lg"
     >
       <Mail className="w-4 h-4 " />
-      <span className="instrument-serif tracking-widest text-[17px]">Mail Me</span>
+      <span className="instrument-serif tracking-widest text-[17px]">
+        Mail Me
+      </span>
     </RainbowButton>
   );
 }
