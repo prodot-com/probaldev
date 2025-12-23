@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Marquee } from "./magicui/marquee";
 
+//Colorfull Techstack
 // const TechStack2 = [
 //   { name: "JavaScript", category: "language", icon: "/techicons/javascript2.svg" },
 //   { name: "TypeScript", category: "language", icon: "/techicons/typescript2.svg" },
@@ -19,7 +20,9 @@ import { Marquee } from "./magicui/marquee";
 //   { name: "Github", category: "tool", icon: "/techicons/github.svg" },
 //   { name: "Vercel", category: "tool", icon: "/techicons/vercel.svg" },
 //   { name: "Firebase", category: "tool", icon: "/techicons/firebase2.svg" },
+//   { name: "Prisma", category: "tool", icon: "/techicons/prisma2.svg" },
 // ];
+
 const TechStack = [
   {
     name: "JavaScript",
@@ -58,6 +61,7 @@ const TechStack = [
   { name: "Github", category: "tool", icon: "/techicons/github.svg" },
   { name: "Vercel", category: "tool", icon: "/techicons/vercel.svg" },
   { name: "Firebase", category: "tool", icon: "/techicons/firebase.svg" },
+  { name: "Prisma", category: "tool", icon: "/techicons/prisma.svg" },
 ];
 
 const firstRow = TechStack.slice(0, TechStack.length / 2);
