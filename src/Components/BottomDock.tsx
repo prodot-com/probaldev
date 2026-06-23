@@ -31,7 +31,7 @@ const BottomDock = ({ className = "" }) => {
   }, []);
 
   const toggleDarkMode = () => {
-    setIsDarkMode((prevMode) => !prevMode);
+    setIsDarkMode((prevMode) => !prevMode); 
   };
   return (
     <div

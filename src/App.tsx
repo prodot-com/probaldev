@@ -16,7 +16,6 @@ const App = () => {
   <SpeedInsights/>
   <Toaster/>
   </BrowserRouter>
-  <Analytics/>
 </div>
   )
 }
